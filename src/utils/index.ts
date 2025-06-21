@@ -16,45 +16,56 @@ export const isMemberOrSpouse =
 
 export const setupShanFamilyTree = (): FamilyTree => {
   //1st generation
-  const family = new FamilyTree('king shan', 'queen anga')
+  const family = new FamilyTree('曲云汉', '刘付勤')
 
   // 2nd generation
-  family.addMember('queen anga', 'ish', Gender.MALE, 'CHILD')
-  family.addMember('queen anga', 'chit', Gender.MALE, 'CHILD')
-  family.addMember('queen anga', 'vich', Gender.MALE, 'CHILD')
-  family.addMember('queen anga', 'satya', Gender.FEMALE, 'CHILD')
+  family.addMember('刘付勤', '曲庆义', Gender.MALE, 'CHILD')
+  family.addMember('刘付勤', '曲庆智', Gender.MALE, 'CHILD')
+  family.addMember('刘付勤', '曲庆莲', Gender.FEMALE, 'CHILD')
+  family.addMember('刘付勤', '曲庆敏', Gender.MALE, 'CHILD')
 
-  family.addMember('chit', 'ambi', Gender.FEMALE, 'SPOUSE')
-  family.addMember('vich', 'lika', Gender.FEMALE, 'SPOUSE')
-  family.addMember('satya', 'vyan', Gender.MALE, 'SPOUSE')
+  family.addMember('曲庆智', '刘旭蓝', Gender.FEMALE, 'SPOUSE')
+  family.addMember('曲庆莲', '贾国庆', Gender.MALE, 'SPOUSE')
+  family.addMember('曲庆敏', '杨凤梅', Gender.FEMALE, 'SPOUSE')
 
   // 3rd generation
-  family.addMember('ambi', 'drita', Gender.MALE, 'CHILD')
-  family.addMember('ambi', 'vrita', Gender.MALE, 'CHILD')
+  family.addMember('刘旭蓝', '管悅武', Gender.MALE, 'CHILD')
+  family.addMember('刘旭蓝', '曲相丽', Gender.FEMALE, 'CHILD')
 
-  family.addMember('lika', 'vila', Gender.MALE, 'CHILD')
-  family.addMember('lika', 'chika', Gender.FEMALE, 'CHILD')
+  family.addMember('贾国庆', '贾钰', Gender.FEMALE, 'CHILD')
+  family.addMember('贾国庆', '贾晓龙', Gender.MALE, 'CHILD')
+  family.addMember('贾国庆', '贾晓勇', Gender.MALE, 'CHILD')
 
-  family.addMember('satya', 'satvy', Gender.FEMALE, 'CHILD')
-  family.addMember('satya', 'savya', Gender.MALE, 'CHILD')
-  family.addMember('satya', 'saayan', Gender.MALE, 'CHILD')
+  family.addMember('曲庆敏', '曲建龙', Gender.MALE, 'CHILD')
+  family.addMember('曲庆敏', '曲建英', Gender.FEMALE, 'CHILD')
+  family.addMember('曲庆敏', '曲建军', Gender.MALE, 'CHILD')
 
-  family.addMember('drita', 'jaya', Gender.FEMALE, 'SPOUSE')
-  family.addMember('vila', 'jnki', Gender.FEMALE, 'SPOUSE')
-  family.addMember('chika', 'kpila', Gender.MALE, 'SPOUSE')
-  family.addMember('satvy', 'asva', Gender.MALE, 'SPOUSE')
-  family.addMember('savya', 'krpi', Gender.FEMALE, 'SPOUSE')
-  family.addMember('saayan', 'mina', Gender.FEMALE, 'SPOUSE')
+  family.addMember('管悅武', '曲相琳', Gender.FEMALE, 'SPOUSE')
+  family.addMember('曲相丽', '刘兴龙', Gender.MALE, 'SPOUSE')
+  family.addMember('贾钰', '陆纪民', Gender.MALE, 'SPOUSE')
+  family.addMember('贾晓龙', '宋蕾', Gender.FEMALE, 'SPOUSE')
+  family.addMember('贾晓勇', '陆楠', Gender.FEMALE, 'SPOUSE')
+  family.addMember('曲建龙', '蒋玉娟', Gender.FEMALE, 'SPOUSE')
+  family.addMember('曲建英', '王秦', Gender.MALE, 'SPOUSE')
+  family.addMember('曲建军', '李静', Gender.FEMALE, 'SPOUSE')
 
   /// 4th generation
-  family.addMember('jaya', 'jata', Gender.MALE, 'CHILD')
-  family.addMember('jaya', 'driya', Gender.FEMALE, 'CHILD')
-  family.addMember('jnki', 'lavnya', Gender.FEMALE, 'CHILD')
-  family.addMember('krpi', 'kriya', Gender.MALE, 'CHILD')
-  family.addMember('mina', 'misa', Gender.MALE, 'CHILD')
+  family.addMember('曲相琳', '管玉鑫', Gender.MALE, 'CHILD')
+  // family.addMember('曲相琳', 'driya', Gender.FEMALE, 'CHILD')
+  family.addMember('陆纪民', '陆婧', Gender.FEMALE, 'CHILD')
+  family.addMember('曲建龙', '曲晓衡', Gender.MALE, 'CHILD')
 
-  family.addMember('driya', 'mnu', Gender.MALE, 'SPOUSE')
-  family.addMember('lavnya', 'gru', Gender.MALE, 'SPOUSE')
+  // family.addMember('王秦', 'kriya', Gender.MALE, 'CHILD')
+  family.addMember('李静', '曲文惠', Gender.FEMALE, 'CHILD')
+  family.addMember('曲相丽', '刘沛濛', Gender.MALE, 'CHILD')
+  family.addMember('贾晓龙', '贾睿涵', Gender.FEMALE, 'CHILD')
+  family.addMember('贾晓勇', '贾睿澍', Gender.MALE, 'CHILD')
+
+  family.addMember('王秦', '王永卓', Gender.MALE, 'CHILD')
+  family.addMember('王秦', '王振宇', Gender.MALE, 'CHILD')
+
+  // family.addMember('driya', 'mnu', Gender.MALE, 'SPOUSE')
+  // family.addMember('陆婧', 'gru', Gender.MALE, 'SPOUSE')
 
   return family
 }

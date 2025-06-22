@@ -10,10 +10,18 @@ import {
 export class FamilyTree {
   public root: Member
 
-  constructor(fatherName: string, motherName: string) {
+  constructor(
+    fatherName: string,
+    motherName: string,
+    birthDate?: string,
+    birthPlace?: string,
+  ) {
     const father: Member = new Member(fatherName, Gender.MALE)
     const mother: Member = new Member(motherName, Gender.FEMALE)
-
+    if (birthDate) {
+      father.birthDate = birthDate
+      mother.birthDate = birthDate
+    }
     this.root = father
     father.addSpouse(mother)
   }
@@ -23,6 +31,9 @@ export class FamilyTree {
     targetName: string,
     targetGender: Gender,
     relationship: AllowedRelationship,
+    birthDate?: string,
+    birthPlace?: string,
+    hometown?: string,
   ): Member {
     let source: Member | null = null
 
@@ -34,7 +45,13 @@ export class FamilyTree {
     if (this.hasMember(targetName))
       throw new Error(`${targetName} already exists in the family tree.`)
 
-    const member = new Member(targetName, targetGender)
+    const member = new Member(
+      targetName,
+      targetGender,
+      birthDate,
+      birthPlace,
+      hometown,
+    )
 
     switch (relationship) {
       case 'CHILD':

@@ -34,6 +34,9 @@ const AddMember = ({ onSubmit, member }: AddMemberProps) => {
   const [gender, setGender] = useState<Gender>()
   const { familyTree, setFamilyTree } = useFamilyTree()
 
+  console.log('member', member);
+
+
   const handleAddMember = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
@@ -66,6 +69,18 @@ const AddMember = ({ onSubmit, member }: AddMemberProps) => {
           <Field>
             <Label htmlFor="relativeName">Relative name</Label>
             <Input id="relativeName" required value={member?.name} disabled />
+          </Field>
+          <Field>
+            <Label htmlFor="relativeName">BirthDate</Label>
+            <Input id="relativeName" required value={member?.birthDate} disabled />
+          </Field>
+          <Field>
+            <Label htmlFor="relativeName">BirthPlace</Label>
+            <Input id="relativeName" required value={member?.birthPlace} disabled />
+          </Field>
+          <Field>
+            <Label htmlFor="relativeName">Hometown</Label>
+            <Input id="relativeName" required value={member?.hometown} disabled />
           </Field>
           <Field>
             <Label htmlFor="relationship">Relationship</Label>

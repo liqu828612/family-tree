@@ -3,6 +3,7 @@ import { Gender } from '@/types/Gender'
 import { useState } from 'react'
 import AddMember from '@/components/AddMember'
 import Avatar from '@/components/Avatar'
+import { merge } from 'lodash'
 
 interface IPersonProps {
   member: IMember | null
@@ -41,6 +42,7 @@ export const Person = ({ member, isDescendant = true }: IPersonProps) => {
         isDescendant={isDescendant}
       />
       <p className="m-0 text-gray-500">{member.name}</p>
+
     </div>
   )
 }

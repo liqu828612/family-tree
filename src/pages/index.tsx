@@ -24,6 +24,9 @@ export default function Home() {
         <h3 className="text-lg font-semibold text-gray-900 ">
           Welcome to the Qu family tree
         </h3>
+        <h3 className="text-lg font-semibold text-red-500">
+          The data is still being verified, please forgive me if there are any errors.
+        </h3>
         <p className="my-4 text-gray-500">
           Click on any one of the family members to add a child or a spouse.
         </p>

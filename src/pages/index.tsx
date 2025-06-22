@@ -30,6 +30,17 @@ export default function Home() {
         <p className="my-4 text-gray-500">
           Click on any one of the family members to add a child or a spouse.
         </p>
+        <p className="my-4 text-gray-500">
+          This family tree application allows you to explore and manage the Qu family genealogy.
+          For any inquiries, corrections, or contributions, please contact us at{' '}
+          <a href="mailto:liqu828612@gmail.com" className="text-blue-500 hover:underline">
+            liqu828612@gmail.com
+          </a>{' '}
+          or{' '}
+          <a href="tel:+447719175149" className="text-blue-500 hover:underline">
+            +447719175149
+          </a>.
+        </p>
       </div>
       <Button
         isBasic

@@ -23,6 +23,12 @@ export const Person = ({ member, isDescendant = true }: IPersonProps) => {
     setSourceMember(member)
     setIsModalVisible(true)
   }
+  // Determine Avatar color: no color if deceased, otherwise based on gender
+  const avatarColor = member.deathDate
+    ? undefined // or '' or null, depending on Avatar's prop type
+    : gender === Gender.MALE
+      ? 'bg-male'
+      : 'bg-female'
 
   return (
     <div
@@ -36,7 +42,8 @@ export const Person = ({ member, isDescendant = true }: IPersonProps) => {
         />
       )}
       <Avatar
-        color={gender === Gender.MALE ? 'bg-male' : 'bg-female'}
+        // color={gender === Gender.MALE ? 'bg-male' : 'bg-female'}
+        color={avatarColor}
         onClick={handleOnClick}
         title={`Avatar for ${name}`}
         isDescendant={isDescendant}

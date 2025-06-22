@@ -16,7 +16,16 @@ export const isMemberOrSpouse =
 
 export const setupShanFamilyTree = (): FamilyTree => {
   //1st generation
-  const family = new FamilyTree('曲云汉', '刘付勤', '1917-06-22')
+  const family = new FamilyTree(
+    '曲云汉',
+    '刘付勤',
+    '1917-06-22',
+    '1918-04-20',
+    '南阳市老瓦店镇',
+    '南阳市英庄镇小庄',
+    '1996-07-18',
+    '1994-12-01',
+  )
 
   // 2nd generation
   family.addMember(
@@ -26,7 +35,8 @@ export const setupShanFamilyTree = (): FamilyTree => {
     'CHILD',
     '1939-05-20',
     '南阳市老瓦店镇',
-    '南阳',
+    '南阳市',
+    '2006-08-18',
   )
   family.addMember(
     '刘付勤',
@@ -82,6 +92,7 @@ export const setupShanFamilyTree = (): FamilyTree => {
     '1950-03-01',
     '南阳市宛城区瓦店镇翟庄',
     '南阳市瓦店镇',
+    '2006-03-26',
   )
 
   // 3rd generation

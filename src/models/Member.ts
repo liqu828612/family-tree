@@ -8,6 +8,7 @@ export class Member {
   // 出生地
   public birthPlace?: string
   public hometown?: string
+  public deathDate?: string
 
   public spouse: Member | null
   public children: Member[]
@@ -18,12 +19,14 @@ export class Member {
     birthDate?: string,
     birthPlace?: string,
     hometown?: string,
+    deathDate?: string,
   ) {
     this.name = name
     this.gender = gender
     this.birthDate = birthDate
     this.birthPlace = birthPlace
     this.hometown = hometown
+    this.deathDate = deathDate
     this.spouse = null
     this.children = []
   }

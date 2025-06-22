@@ -14,13 +14,23 @@ export class FamilyTree {
     fatherName: string,
     motherName: string,
     birthDate?: string,
+    motherBirthDate?: string,
     birthPlace?: string,
+    motherBirthPlace?: string,
+    deathDate?: string,
+    motherDeathDate?: string,
   ) {
     const father: Member = new Member(fatherName, Gender.MALE)
     const mother: Member = new Member(motherName, Gender.FEMALE)
     if (birthDate) {
       father.birthDate = birthDate
-      mother.birthDate = birthDate
+      father.birthPlace = birthPlace
+      father.deathDate = deathDate
+      mother.birthDate = motherBirthDate
+      mother.birthPlace = motherBirthPlace
+      mother.deathDate = motherDeathDate
+    } else {
+      mother
     }
     this.root = father
     father.addSpouse(mother)
@@ -34,6 +44,7 @@ export class FamilyTree {
     birthDate?: string,
     birthPlace?: string,
     hometown?: string,
+    deathDate?: string,
   ): Member {
     let source: Member | null = null
 
@@ -51,6 +62,7 @@ export class FamilyTree {
       birthDate,
       birthPlace,
       hometown,
+      deathDate,
     )
 
     switch (relationship) {

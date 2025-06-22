@@ -71,15 +71,21 @@ const AddMember = ({ onSubmit, member }: AddMemberProps) => {
             <Input id="relativeName" required value={member?.name} disabled />
           </Field>
           <Field>
-            <Label htmlFor="relativeName">BirthDate</Label>
+            <Label htmlFor="relativeName">Birth Date</Label>
             <Input id="relativeName" required value={member?.birthDate} disabled />
           </Field>
           <Field>
-            <Label htmlFor="relativeName">BirthPlace</Label>
+            <Label htmlFor="relativeName">Birth Place</Label>
             <Input id="relativeName" required value={member?.birthPlace} disabled />
           </Field>
+          {member?.deathDate && (
+            <Field>
+              <Label htmlFor="deathDate">Death Date</Label>
+              <Input id="deathDate" required value={member.deathDate} disabled />
+            </Field>
+          )}
           <Field>
-            <Label htmlFor="relativeName">Hometown</Label>
+            <Label htmlFor="relativeName">Home Town</Label>
             <Input id="relativeName" required value={member?.hometown} disabled />
           </Field>
           <Field>

@@ -5,6 +5,7 @@ export interface IMember {
   birthDate?: string
   birthPlace?: string
   hometown?: string
+  deathDate?: string
   gender: Gender
   spouse: IMember | null
   children: IMember[]

@@ -42,8 +42,8 @@ const FamilyTree = () => {
   const { root } = useFamilyTree()
 
   return (
-    <div className="tree whitespace-nowrap" data-testid="family-tree-root">
-      <ul className="relative flex flex-row items-baseline justify-center">
+    <div className="tree whitespace-nowrap w-full overflow-x-auto scroll-smooth" data-testid="family-tree-root">
+      <ul className="relative flex flex-row items-baseline justify-center inline-flex flex-nowrap gap-4 p-4">
         <SubFamilyTree rootMember={root} />
       </ul>
     </div>

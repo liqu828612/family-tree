@@ -50,7 +50,7 @@ export const setupShanFamilyTree = (): FamilyTree => {
   family.addMember('曲建军', '李静', Gender.FEMALE, 'SPOUSE')
 
   /// 4th generation
-  family.addMember('曲相琳', '管玉鑫', Gender.MALE, 'CHILD')
+  family.addMember('曲相琳', '管玉鑫', Gender.FEMALE, 'CHILD')
   // family.addMember('曲相琳', 'driya', Gender.FEMALE, 'CHILD')
   family.addMember('陆纪民', '陆婧', Gender.FEMALE, 'CHILD')
   family.addMember('曲建龙', '曲晓衡', Gender.MALE, 'CHILD')

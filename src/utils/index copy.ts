@@ -16,50 +16,18 @@ export const isMemberOrSpouse =
 
 export const setupShanFamilyTree = (): FamilyTree => {
   //1st generation
-  const family = new FamilyTree('曲氏祖', '曲氏母', '', '', '', '', '', '')
-  // 曲云汉
-  // 刘付勤
-  // 曲文炳 曲苏氏
-  family.addMember('曲氏祖', '曲氏', Gender.MALE, 'CHILD', '', '', '', '')
-
-  family.addMember('曲氏', '配?氏', Gender.FEMALE, 'SPOUSE', '', '', '', '')
-
-  family.addMember(
-    '曲氏',
-    '曲云汉',
-    Gender.MALE,
-    'CHILD',
-    '1939-05-20',
+  const family = new FamilyTree(
+    '曲氏祖',
+    '曲氏母',
+    '1917-06-22',
+    '1918-04-20',
     '南阳市老瓦店镇',
-    '南阳市',
-    '2006-08-18',
+    '南阳市英庄镇小庄',
+    '1996-07-18',
+    '1994-12-01',
   )
-  family.addMember(
-    '曲云汉',
-    '刘付勤',
-    Gender.FEMALE,
-    'SPOUSE',
-    '1939-05-20',
-    '南阳市老瓦店镇',
-    '南阳市',
-    '2006-08-18',
-  )
-
-  family.addMember('曲氏', '曲云忠', Gender.MALE, 'CHILD', '', '', '', '')
-  family.addMember('曲云忠', '贾桂英', Gender.FEMALE, 'SPOUSE', '', '', '', '')
 
   // 2nd generation
-  // 开始曲云忠
-  family.addMember('曲云忠', '曲庆信', Gender.MALE, 'CHILD', '', '', '', '')
-
-  family.addMember('曲庆信', '李信风', Gender.FEMALE, 'SPOUSE', '', '', '', '')
-  family.addMember('曲云忠', '曲玉莲', Gender.FEMALE, 'CHILD', '', '', '', '')
-  family.addMember('曲玉莲', '崔定贵', Gender.MALE, 'SPOUSE', '', '', '', '')
-
-  family.addMember('曲云忠', '曲庆云', Gender.MALE, 'CHILD', '', '', '', '')
-  family.addMember('曲庆云', '刘爱荣', Gender.FEMALE, 'SPOUSE', '', '', '', '')
-  family.addMember('曲云忠', '曲庆海', Gender.MALE, 'CHILD', '', '', '', '')
-
   family.addMember(
     '刘付勤',
     '曲庆义',
@@ -128,23 +96,6 @@ export const setupShanFamilyTree = (): FamilyTree => {
   )
 
   // 3rd generation
-
-  family.addMember('曲庆信', '曲志红', Gender.FEMALE, 'CHILD', '', '', '', '')
-  family.addMember('曲庆信', '曲志梅', Gender.FEMALE, 'CHILD', '', '', '', '')
-  family.addMember('曲志梅', '肖进', Gender.MALE, 'SPOUSE', '', '', '', '')
-  family.addMember('曲庆信', '曲志荣', Gender.FEMALE, 'CHILD', '', '', '', '')
-  family.addMember('曲志荣', '李昌洪', Gender.MALE, 'SPOUSE', '', '', '', '')
-  family.addMember('曲志红', '张守武', Gender.MALE, 'SPOUSE', '', '', '', '')
-  // 崔定贵
-  family.addMember('崔定贵', '崔建昱', Gender.FEMALE, 'CHILD', '', '', '', '')
-  family.addMember('崔建昱', '张景德', Gender.MALE, 'SPOUSE', '', '', '', '')
-  family.addMember('崔定贵', '崔建乐', Gender.MALE, 'CHILD', '', '', '', '')
-  family.addMember('崔建乐', '申瑞祥', Gender.FEMALE, 'SPOUSE', '', '', '', '')
-  family.addMember('崔定贵', '崔建朝', Gender.MALE, 'CHILD', '', '', '', '')
-  family.addMember('崔建朝', '樊爱芝', Gender.FEMALE, 'SPOUSE', '', '', '', '')
-  family.addMember('曲庆云', '曲丽', Gender.FEMALE, 'CHILD', '', '', '', '')
-  family.addMember('曲丽', '邓长刚', Gender.MALE, 'SPOUSE', '', '', '', '')
-
   family.addMember(
     '刘旭蓝',
     '管悅武',
@@ -286,24 +237,6 @@ export const setupShanFamilyTree = (): FamilyTree => {
   )
 
   /// 4th generation
-
-  family.addMember('曲志红', '张家琦', Gender.FEMALE, 'CHILD', '', '', '')
-  family.addMember('曲志梅', '肖羽翀', Gender.FEMALE, 'CHILD', '', '', '')
-  family.addMember('曲志荣', '曲木子', Gender.MALE, 'CHILD', '', '', '')
-  family.addMember('曲志荣', '李子木', Gender.FEMALE, 'CHILD', '', '', '')
-  family.addMember('崔建昱', '张冰', Gender.FEMALE, 'CHILD', '', '', '')
-  family.addMember('崔建昱', '张世豪', Gender.MALE, 'CHILD', '', '', '')
-  family.addMember('崔建乐', '崔振天', Gender.MALE, 'CHILD', '', '', '')
-  family.addMember('崔振天', '唐天娥', Gender.FEMALE, 'SPOUSE', '', '', '')
-  family.addMember('崔建乐', '崔振江', Gender.MALE, 'CHILD', '', '', '')
-
-  family.addMember('崔建朝', '崔振环', Gender.FEMALE, 'CHILD', '', '', '')
-  family.addMember('崔振环', '刘帅', Gender.MALE, 'SPOUSE', '', '', '')
-  family.addMember('崔建朝', '崔一帆', Gender.MALE, 'CHILD', '', '', '')
-  family.addMember('崔一帆', '冯春娟', Gender.FEMALE, 'SPOUSE', '', '', '')
-  family.addMember('曲丽', '曲波', Gender.MALE, 'CHILD', '', '', '')
-  family.addMember('曲丽', '邓泽霖', Gender.MALE, 'CHILD', '', '', '')
-
   family.addMember(
     '曲相琳',
     '管玉鑫',
@@ -382,9 +315,6 @@ export const setupShanFamilyTree = (): FamilyTree => {
     '南阳市宛城区瓦店镇',
     '南阳市',
   )
-  /// 5th generation
-  family.addMember('崔振天', '崔恩沛', Gender.MALE, 'CHILD', '', '', '')
-  family.addMember('崔振环', '刘佳莹', Gender.MALE, 'CHILD', '', '', '')
 
   // family.addMember('driya', 'mnu', Gender.MALE, 'SPOUSE')
   // family.addMember('陆婧', 'gru', Gender.MALE, 'SPOUSE')

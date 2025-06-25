@@ -17,8 +17,8 @@ export const isMemberOrSpouse =
 export const setupShanFamilyTree = (): FamilyTree => {
   //1st generation
   const family = new FamilyTree(
-    '曲氏祖',
-    '曲氏母',
+    '曲云汉',
+    '刘付勤',
     '1917-06-22',
     '1918-04-20',
     '南阳市老瓦店镇',
@@ -26,6 +26,7 @@ export const setupShanFamilyTree = (): FamilyTree => {
     '1996-07-18',
     '1994-12-01',
   )
+  
 
   // 2nd generation
   family.addMember(

@@ -175,7 +175,7 @@ export const setupShanFamilyTree = (): FamilyTree => {
   family.addMember('曲晓峰', '许春莲', Gender.FEMALE, 'SPOUSE', '', '', '', '')
 
   family.addMember('曲兰甫', '曲耀峰', Gender.MALE, 'CHILD', '', '', '', '')
-  family.addMember('曲耀峰', '张艳玲', Gender.FEMALE, 'SPOUSE', '', '', '', '')
+  family.addMember('曲耀峰', '张艳平', Gender.FEMALE, 'SPOUSE', '', '', '', '')
 
   family.addMember('曲兰甫', '曲秋萍', Gender.FEMALE, 'CHILD', '', '', '', '')
   family.addMember('曲秋萍', '胡勇', Gender.MALE, 'SPOUSE', '', '', '', '')
